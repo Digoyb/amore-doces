@@ -1,0 +1,1070 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    list-style-type: none;
+    font-family: 'caveat', cursive;
+}
+.logo-menor{
+    width: 8%;
+    position: fixed;
+    float: right;
+    right: 50px;
+    top: 50px;
+    animation: logomenor 2s ease-out;
+    border-radius: 50%;
+    transition: .5s;
+    z-index: 20;
+}
+.logo-menor:hover{
+    transform: scaleX(1.2) scaleY(1.2) rotate(20deg);
+    box-shadow: 10px 10px 10px black;
+}
+#logo-oficial:hover{
+    transform: scaleX(1.2) scaleY(1.2) rotate(20deg);
+    box-shadow: 10px 10px 10px black;
+}
+@keyframes logomenor{
+    0%{transform: rotate(360deg) scale(-1,-1);   
+        100%{transform: rotate(20deg);}
+    }
+    
+}
+header{
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to right bottom, rgba(255, 0, 59, 0.8), rgba(255, 0, 63, 0.8)), url(img/banner-amore-e-doces.jpg);
+    background-position: 20% 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0px -10px 50px 1px black;
+}
+#logo-oficial{
+    width:20%;
+    position: relative;
+    left: 40%;
+    top:35%;
+    z-index: 2;
+    animation: giragira 2s;
+    transition: .5s;
+    border-radius: 100px;  
+}
+@keyframes giragira{
+    0%{transform: rotate(360deg);}
+}
+.contato-header{
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+}
+.contato-header li{
+    color: white;
+    font-size: 1.5em;
+    float: left;
+    position: relative;
+    
+    margin: 0 50px;
+    top: 1px;
+}
+.contato-header li:nth-of-type(2){
+float: right;
+}
+.contato-header li:nth-of-type(2)::before{
+    content: url(img/thumb/iconwhats.png);
+    position: relative;
+    top: 9px;
+    
+}
+
+.list-inline {
+  
+    list-style: none;
+    width: 100%;
+    
+    
+}
+    .menu {
+    background: #BE1E2D;
+    font-family: 'bebas_neueregular';
+    font-size: 24px;
+   
+    margin-top: -55px;
+
+}
+.cMenu {
+    padding-right: 0 !important;
+}
+
+.list-inline a{
+    font-size: 40px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.list-inline > li {
+    display: inline-block;
+}
+
+.header-menu .col{
+    display: inline-block;
+    position: relative;
+    float: left;
+    text-align: center;
+    
+    width: 100%;
+    
+    
+}
+.header-menu{
+    background-color: black;
+    height: 50px;
+    background: linear-gradient(to right bottom, rgb(221, 5, 55), rgb(199, 114, 120));
+}
+.menu-right a{
+    margin-left: 100px;
+}
+.menu-left a{
+    margin-right: 100px;
+    text-decoration: none;
+}
+
+
+
+.header-menu .col li{
+    display: inline-block;
+   
+    
+}
+
+.header-menu .col li a{
+    font-size: 2em;
+    color: white;
+     
+    
+}
+.menu-right{
+    float: right;
+}
+
+.slider-container{
+   background-image: -webkit-linear-gradient(top left, rgba(255, 0, 59, 0.8), rgba(255, 0, 63, 0.8)), url(img/brigadeiros-confeitados.jpg);
+   background-image: -o-linear-gradient(top left, rgba(255, 0, 59, 0.8), rgba(255, 0, 63, 0.8)), url(img/brigadeiros-confeitados.jpg);
+   background-image: linear-gradient(to bottom right, rgba(255, 0, 59, 0.8), rgba(255, 0, 63, 0.8)), url(img/brigadeiros-confeitados.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* QUOTE */
+
+@font-face {
+    font-family: 'Sketch Block';
+    src: url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.eot');
+    src: url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.woff') format('woff'),
+         url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.ttf') format('truetype'),
+         url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.svg#SketchBlockBold') format('svg');
+}
+
+@font-face {
+    font-family: 'Museo 700';
+    src: url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.eot');
+    src: url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.woff') format('woff'),
+         url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.ttf') format('truetype'),
+         url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.svg#SketchBlockBold') format('svg');
+}
+
+@font-face {
+    font-family: 'CallunaRegular';
+    src: url('http://tangledindesign.com/codepen/fonts/Calluna-Regular-webfont.eot');
+    src: url('http://tangledindesign.com/codepen/fonts/Calluna-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://tangledindesign.com/codepen/fonts/Calluna-Regular-webfont.woff') format('woff'),
+         url('http://tangledindesign.com/codepen/fonts/Calluna-Regular-webfont.ttf') format('truetype'),
+         url('http://tangledindesign.com/codepen/fonts/Calluna-Regular-webfont.svg#CallunaRegular') format('svg');
+}
+
+
+
+    blockquote {
+        width: 530px;
+        font: 2.65em CallunaRegular;
+        letter-spacing: .075em;
+        float: left;
+        padding: 45px 0 30px 25px;
+        margin: 0;
+        border-top: 2px dotted #d33956;
+        border-bottom: 2px dotted #d33956;
+        -webkit-transform: rotate(-3deg);
+        -moz-transform: rotate(-3deg);
+        text-align: center;
+        margin-left: 30%;
+        position: relative;
+       margin-top: 40px;    
+    }
+.citacao{
+    height: 350px;
+    background-image: linear-gradient(to right bottom, rgba(255,255,255, 0.8), rgba(255, 0, 63, 0.8)), url(img/brigadeiro.jpg);
+    box-shadow: 20px 20px 20px black;
+    background-position: 20% 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h3{
+    color: blue;
+}
+
+
+
+        blockquote:first-line {
+            font: 1.85em "Sketch Block";
+            color: rgb(221, 5, 55);
+        }
+
+        blockquote:first-letter {
+            font-size: 3.3em;
+            text-transform: lowercase;
+            float: left;
+            line-height: .50em;
+            margin-right: -10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        blockquote strong:first-child {
+                margin-left: -48px;
+            top: 30px;
+            letter-spacing: 0;
+            font-size: 35px;
+        }
+
+        blockquote strong:last-child {
+            font: 2em "Museo 700";
+            text-transform: uppercase;
+            letter-spacing: 0;
+        }
+
+        blockquote em {
+            border-bottom: 2px dotted #d33956;
+            font-size: 40px;
+        }
+
+        blockquote + b {
+            float: right;
+            margin-top: 50px;
+            font: 1.6em CallunaRegular;
+            letter-spacing: .15em;
+        }
+
+        blockquote + b:first-letter {
+            color: #fff79e;
+            font-size: 6.3em;
+            font-style: italic;
+            letter-spacing: ;
+        }
+
+.history{
+    height: 700px;
+    width: 100%;
+    background-image: linear-gradient(to right bottom, rgb(255, 255, 255), rgb(255, 244, 214, 0.8)), url(../img/brigadeiros-avulsos.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 10px;
+    border-radius: 100px;
+    
+    
+    
+}
+
+.history .col p{
+    font-size: 25px;
+    text-indent: 80px;
+    text-align: justify; 
+    color: rgb(221, 5, 55);
+    padding: 0px 100px;
+    letter-spacing: normal;
+    
+}
+
+.col-right{
+    border-right: 3px dashed #fe2f61;
+    letter-spacing: 2px;
+    padding: 100px 9;
+    border-radius: 70px;
+    
+}
+.col-left{
+    background-image: linear-gradient(to right bottom, rgba(255, 0, 59, 0.8), rgba(255, 0, 63, 0.8)), url(img/brigadeiro-Faculdade-Cambury.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    
+}
+
+.row .col{
+    text-align: center;
+    
+    
+}
+
+.col-left img {
+    transform: rotate(-20deg);
+    width: 600px;
+}
+
+/* RODAPEEEEEEEEEEEEEEEEEEEEEEEZ */
+
+
+
+
+
+
+.container2 { width: 100% !important; background-image: linear-gradient(to right bottom, rgba(255, 0, 59, 0.8), rgba(255, 0, 63, 0.8)), url(img/brigadeiro.jpg);
+    box-shadow: 20px 20px 20px black;
+    background-position: 20% 35%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;width:1200px;margin:0 auto; display:table;}
+.clearall {width:0px;height: 0px;overflow: hidden;clear: both;line-height:0;}
+.float_left{float:left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-size: 30px !important;
+    background-size: cover;
+    color: white;
+    height: ;
+    border-radius: 30px 0;
+    border: 2px dashed #e92260;
+    
+}
+.float_left #logo-rodape {
+    right: 10%;
+    margin-top: 85px;
+}
+.float_left nav ul li a{
+    color: white;
+}
+.float_right{float:right;}
+.hide{display:none;}
+#logo-rodape {
+    width: 328px;
+   text-align: center;
+}
+
+
+
+
+/*Formularios
+-----------------------------------------------------------------------------*/
+#form-contato {font-size:16px;color:#333;}  
+#form-contato input, #form-contato label {display:block;float:left;}
+#form-contato input {color: #564014;font-size: 20px;margin-bottom: 5px;margin-right: 6px;margin-top: 2px;padding: 3px 0 3px 3px;width:1089px;}
+#form-contato textarea{color: #564014;font-size: 20px;margin-bottom: 5px;margin-right: 6px;margin-top: 2px;padding: 3px 0 3px 3px;width:1090px;height:110px;}
+#form-contato label {padding-right:10px;padding-bottom:10px;width:89px;margin-top:8px;}
+#form-contato br {clear: left;}
+#form-contato #btn-form-orcamento{margin-left: 975px;width: 220px;margin-top:-10px;}
+
+#form-revenda {font-size:16px;color:#333;margin-top:30px;}  
+#form-revenda input, #form-revenda label {display:block;float:left;}
+#form-revenda input {color: #564014;font-size: 20px;margin-bottom: 5px;margin-right: 6px;margin-top: 2px;padding: 3px 0 3px 3px;width: 395px;}
+#form-revenda textarea{color: #564014;font-size: 20px;margin-bottom: 5px;margin-right: 6px;margin-top: 2px;padding: 3px 0 3px 3px;width: 395px;height:110px;}
+#form-revenda label {text-align:right;width:35px;padding-right:20px;padding-bottom:10px;width:120px;margin-top:8px;}
+#form-revenda br {clear: left;}
+#form-revenda #btn-form-revenda{margin-left:140px;width:402px;}
+#form-revenda span {color:#FF0000;}
+
+
+/*Footer
+------------------------------------------------------------------------------------------------------------*/
+#logo-rodape{position: absolute;}
+#logo-rodape-orange{margin-top:10px;}
+#texto-copyright {margin-left: 230px;margin-top:-30px;}
+
+#box-desconto-novidades-footer div p{ font-size: 40px !important; text-align: center; color: white; margin:10px 0 10px 0;}
+#box-desconto-novidades-footer div span{font-weight:bold;}
+#box-desconto-novidades-footer div span{font-weight:bold;}
+
+#form-descontos-novidades {color:white;font-size:14px;}
+#form-descontos-novidades input {border:1px solid #b5484b;width:180px;height:50px;}
+#form-descontos-novidades #btn-descontos-novidades{width:200px;height:70px;background-color:#f66783;color:#FFF;}
+
+#forma-pagamento {font-size:50px;color:#72351d;margin-bottom:7px;}
+#forma-pagamento span{font-size:50px;}
+#box-telefones{border-left: 1px solid white; float:left;font-size:100px;color: white; text-align: center; float:left;margin-top:3px;line-height: 23px;}
+#box-telefones span{display: block; margin-left: 30px; font-size:30px;}
+#box-social-rodape {float:left;width:120px;margin-top:5px;right:5px solid #8b4a3e;height:50px;padding-top:17px;}
+
+footer nav{float:left;font-size:50px;color:#72351d;margin-right:15px;font-weight:300;}
+footer nav ul {list-style-type: none;margin-top:10px;}
+footer nav ul li {font-size:36px;border-bottom:1px solid white;line-height:40px;width:106px;} 
+footer nav ul li a:hover {color:#885353;} 
+footer .sem-borda {border-bottom:none;}
+
+.clique-aqui:hover {font-weight:bold;}
+
+#bg-info-endereco {  width:100%;height:435px;margin-top:60px;padding-top:20px;}
+#msg-aviso{position:absolute;z-index:10;margin-top:-20px;width:600px;text-align:center;font-weight:bold;}
+#box-forma-pagamento-rodape {margin-left:-5px;margin-top:21px;width:460px;margin-left:30px;}
+.posicao-ico-rodape {width: 45px}
+
+.doces .row {
+    text-align: center;
+    height: 1479px;
+    padding-top: 100px;
+}
+
+.doces .row p {
+    font-size: 30px;
+    color: white;
+    width: 389px;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    background-image: url(img/thumb/beijinho-thumb.jpg);
+    border: 10px solid #e00a35;
+    border-radius: 100px 0;
+    z-index: 9999;
+}
+
+.destaques{
+background-image: linear-gradient(to bottom right, rgba(255, 0, 59, 0.8), rgba(255, 0, 63, 0.8)), url(img/fundo-brigadeiro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+
+
+
+textarea{
+    width: 650px;
+    height: 20px;
+    font-size: 100px;
+    color: white;
+     resize: none;
+}
+.menu{
+    margin-top: 2px;
+    text-align: center;
+}
+.menu li a{
+    font-size: 30px;
+    color: wheat;
+    transition: .2s;
+    text-decoration: none;
+    
+}
+.menu li a:hover{
+    color: darkred;
+    font-weight: bolder;
+}
+.menu li{
+    transition: .2s;
+}
+.menu li:hover{
+    background-color: crimson;
+}
+
+.produtoDestaque .rotate:hover{
+    transform: rotateY(-180deg);
+}
+.rotate{
+    width: 300px;
+    height: 300px;
+    transition: all .8s;
+    position: relative;
+    backface-visibility: hidden;
+    
+     
+     
+     
+}
+
+
+.card__side {
+    
+    width: 300px;
+    height: 300px;
+    border: 10px solid #e00a35;
+    border-radius: 0 100px;
+    position: absolute;
+    transform: rotateY(-180deg);
+    top: 0;
+    z-index: 1;
+    
+    
+   
+}
+.card__side{
+    
+}
+
+.produtoDestaque a:hover{
+    text-decoration: none;
+    color:palevioletred;
+}
+.produtoDestaque p{
+    text-decoration: none;
+    color:palevioletred;
+    border: 3px dashed #e00a35;
+    border-radius: 50px;
+    padding: 10px;
+    background-image: linear-gradient(to right bottom, rgba(255,255,255, 0.8), rgba(255, 0, 63, 0.8)), url(img/brigadeiro.jpg);
+    transition: .2s ease-in;
+}
+.produtoDestaque p:hover{
+    box-shadow: 20px 20px 30px black;
+    transform: rotate(-10deg) scale(1.1,1.1);
+    color: black;
+    font-weight: bolder;
+}
+
+
+@media only screen and (max-width:1024px){
+    #mensagem {
+    min-height: 40px;
+    width: 404px;
+    margin-right: 200px;
+    position: absolute;
+    left: 38px;
+    margin-top: 4px;
+}
+    .container2{
+        background-position: 68% 45%;
+    }
+    .doces .row p {
+    font-size: 30px;
+    color: white;
+    width: 265px;
+}
+    .float_left #logo-rodape {
+    right: 4%;
+    margin-top: 35px;
+}
+  .doces .row img {
+    width: 235px;
+    height: 235px;
+    border: 10px solid #e00a35;
+    border-radius: 100px 0;
+}
+    .doces .row {
+    text-align: center;
+    height: 1589px;
+    padding-top: 100px;
+}
+    .history {
+    height: 831px;
+}
+    .col-left {
+    background-image: linear-gradient(to right bottom, rgba(255, 0, 59, 0.8), rgba(255, 0, 63, 0.8)), url(img/brigadeiro-Faculdade-Cambury.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 19%;
+}
+    .col-left img {
+    top: 145px;
+    position: relative;
+    transform: rotate(-20deg);
+    width: 550px;
+}
+   #logo-oficial {
+    width: 22%;
+    position: relative;
+    left: 38%;
+    top: 42%;
+    z-index: 2;
+    animation: giragira 2s;
+    transition: .5s;
+    border-radius: 100px;
+}
+    blockquote {
+    width: 530px;
+    font: 2.65em CallunaRegular;
+    letter-spacing: .075em;
+    float: left;
+    padding: 41px 0 41px 13px;
+    margin: 0;
+    border-top: 2px dotted #d33956;
+    border-bottom: 2px dotted #d33956;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    text-align: center;
+    margin-left: 16%;
+    position: relative;
+    margin-top: 40px;
+}
+    #logo-rodape {
+    width: 214px;
+    text-align: center;
+}
+    
+.citacao{
+background-position: 65% 35%;
+}
+   
+}
+@media only screen and (max-width:768px){
+     .header-menu .col li a {
+    font-size: 1.2em;
+    color: white;
+}
+    .container2{
+        background-position: 68% 45%;
+    }
+    #logo-oficial{
+        top: 57%;
+    }
+    
+    .row .col {
+    text-align: center;
+    margin-top: 10px;
+}
+    .col-right h1{
+            font-size: 30px;
+    }
+    .history .col p {
+    font-size: 23px;
+    text-indent: 1px;
+    text-align: justify;
+    color: rgb(221, 5, 55);
+    padding: 0px 57px;
+    letter-spacing: normal;
+}
+    .history {
+    height: 733px;
+}
+    .doces .row img {
+    width: 209px;
+    height: 206px;
+    border: 10px solid #e00a35;
+    border-radius: 100px 0;
+}
+    .doces .row p {
+    font-size: 30px;
+    color: white;
+    width: 199px;
+}
+  
+    .produtoDestaque h2{
+        font-size: 30px;
+    }
+    .doces .row p {
+    font-size: 23px;
+    color: white;
+}
+  
+    .doces .row {
+    text-align: center;
+    height: 1445px;
+    padding-top: 100px;
+}
+    #box-desconto-novidades-footer div p {
+    font-size: 20px !important;
+    text-align: center;
+    color: white;
+    margin: 10px 0 10px 0;
+}
+    #form-descontos-novidades input {
+    border: 1px solid #b5484b;
+    width: 110px;
+    height: 36px;
+}
+    #form-descontos-novidades #btn-descontos-novidades {
+    width: 91px;
+    height: 36px;
+    background-color: #f66783;
+    color: #FFF;
+}
+    #logo-rodape {
+    width: 130px;
+    text-align: center;
+}
+    .float_left #logo-rodape {
+    right: 15%;
+    margin-top: 4px;
+        width: 116px;
+}
+#mensagem {
+    min-height: 40px;
+    width: 219px;
+    margin-right: 200px;
+    position: absolute;
+    left: 41px;
+    margin-top: 15px;
+}
+    .citacao {
+    height: 350px;
+    background-image: linear-gradient(to right bottom, rgba(255,255,255, 0.8), rgba(255, 0, 63, 0.8)), url(img/brigadeiro.jpg);
+    box-shadow: 20px 20px 20px black;
+    background-position: 57% 8%
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+@media only screen and (max-width:475px){
+    .contato-header li {
+    color: white;
+        
+   
+    float: left;
+    position: relative;
+    margin: 0 9px;
+    top: 21px;
+}
+    .container2{
+        background-position: 68% 45%;
+    }
+    
+    .doces .row p {
+    font-size: 30px;
+    color: white;
+    width: 322px;
+}
+    .contato-header li:nth-of-type(2) {
+    float: right;
+    top: -7px;
+}
+    .contato-header li{
+        font-size: 1em;
+    }
+   .contato-header li:nth-of-type(2) {
+    float: right;
+    top: -15px;
+}
+    .header-menu .col li a {
+    font-size: 1em;
+    color: white;
+}
+    .menu-right a {
+    margin-left: 100px;
+}
+    .menu-left a {
+    margin-right: 115px;
+    text-decoration: none;
+}
+    blockquote {
+    width: 156px;
+    font: 2.65em CallunaRegular;
+    letter-spacing: .075em;
+    float: left;
+    padding: 0px 0 0 13px;
+    margin: 0;
+    margin-top: 14px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 19%;
+    border-top: 2px dotted #d33956;
+    border-bottom: 2px dotted #d33956;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    text-align: center;
+    margin-left: 19%;
+    position: relative;
+    margin-top: 14px;
+}
+    .history .col p {
+        font-size: 1.1em;
+    text-indent: 1px;
+    text-align: justify;
+    color: rgb(221, 5, 55);
+    padding: 0px 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 14px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 14px;
+    letter-spacing: normal;
+}
+    .col-left img {
+    top: 345px;
+    position: relative;
+    transform: rotate(-37deg);
+    width: 287px;
+    background-color: #ec0d33;
+    border-radius: 100%;
+    left: -8px;
+}
+    .menu-left li a{
+        display: none;
+    }
+    .menu-right li a{
+        display: none;
+    }
+    #logo-oficial{
+        top: 150px;
+        width: 200px;
+        left: 90px;
+        
+    }
+    .doces .row img {
+    width: 234px;
+    height: 231px;
+    }
+    .produtoDestaque{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .col .produtoDestaque{
+        margin-bottom: 30px;
+    }
+    .doces .row {
+    text-align: center;
+    height: 3813px;
+    padding-top: 0;
+}
+    .logo-menor {
+    width: 19%;
+    position: fixed;
+    float: right;
+    right: 23px;
+    top: 50px;
+    animation: logomenor 2s ease-out;
+    border-radius: 50%;
+    transition: .5s;
+    z-index: 20;
+}
+    #box-desconto-novidades-footer div p {
+    font-size: 16px !important;
+    text-align: center;
+    color: white;
+    margin: 10px 0 10px 0;
+}
+    #box-forma-pagamento-rodape {
+    margin-left: -5px;
+    margin-top: 21px;
+    width: 305px;
+    margin-left: 26px;
+}
+    #mensagem {
+    min-height: 40px;
+    width: 380px;
+    margin-right: 0;
+    position: absolute;
+    left: 7px;
+    margin-top: 5px;
+}
+    #form-descontos-novidades {
+    color: white;
+    font-size: 14px;
+    margin-left: 34px;
+}
+    #form-descontos-novidades #btn-descontos-novidades {
+    position: relative;
+    width: 150px;
+    height: 46px;
+    background-color: #f66783;
+    color: #FFF;
+    left: 98px;
+    top: 4px;
+}
+    .float_left #logo-rodape {
+    right: 10%;
+    margin-top: -269px;
+    width: 85px;
+}
+    .contato-header li {
+    font-size: 1em;
+    top: 2px;
+}
+    .contato-header li:nth-of-type(2) {
+    float: right;
+    top: -11px;
+}
+    .row .col {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 21px;
+}
+}
+@media only screen and (max-width:375px){
+    .contato-header li {
+    color: white;
+   
+    float: left;
+    position: relative;
+    margin: 0 9px;
+    top: 21px;
+}
+    .doces .row p {
+    font-size: 30px;
+    color: white;
+    width: 291px;
+}
+    .contato-header li:nth-of-type(2) {
+    float: right;
+    top: -7px;
+}
+    .contato-header li{
+        font-size: 1em;
+    }
+   .contato-header li:nth-of-type(2) {
+    float: right;
+    top: -15px;
+}
+    .header-menu .col li a {
+    font-size: 1em;
+    color: white;
+}
+    .menu-right a {
+    margin-left: 100px;
+}
+    .menu-left a {
+    margin-right: 115px;
+    text-decoration: none;
+}
+    blockquote {
+    width: 156px;
+    font: 2.65em CallunaRegular;
+    letter-spacing: .075em;
+    float: left;
+    padding: 0px 0 0 13px;
+    margin: 0;
+    margin-top: 14px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 19%;
+    border-top: 2px dotted #d33956;
+    border-bottom: 2px dotted #d33956;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    text-align: center;
+    margin-left: 19%;
+    position: relative;
+    margin-top: 14px;
+}
+    .history .col p {
+        font-size: 1.1em;
+    text-indent: 1px;
+    text-align: justify;
+    color: rgb(221, 5, 55);
+    padding: 0px 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 14px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 14px;
+    letter-spacing: normal;
+}
+    .col-left img {
+    top: 372px;
+    position: relative;
+    transform: rotate(-37deg);
+    width: 259px;
+    background-color: #ec0d33;
+    border-radius: 100%;
+    left: -6px;
+}
+    .menu-left li a{
+        display: none;
+    }
+    .menu-right li a{
+        display: none;
+    }
+    #logo-oficial{
+        top: 150px;
+        width: 200px;
+        left: 85px;
+    }
+    .doces .row img {
+    width: 234px;
+    height: 231px;
+    }
+    .produtoDestaque{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .col .produtoDestaque{
+        margin-bottom: 30px;
+    }
+    .doces .row {
+    text-align: center;
+    height: 3813px;
+    padding-top: 0;
+}
+    .logo-menor {
+    width: 19%;
+    position: fixed;
+    float: right;
+    right: 23px;
+    top: 50px;
+    animation: logomenor 2s ease-out;
+    border-radius: 50%;
+    transition: .5s;
+    z-index: 20;
+}
+    #box-desconto-novidades-footer div p {
+    font-size: 16px !important;
+    text-align: center;
+    color: white;
+    margin: 10px 0 10px 0;
+}
+    #box-forma-pagamento-rodape {
+    margin-left: -5px;
+    margin-top: 21px;
+    width: 305px;
+    margin-left: 26px;
+}
+    
+    #mensagem {
+    min-height: 40px;
+    width: 350px;
+    margin-right: 0;
+    position: absolute;
+    left: 7px;
+    margin-top: 5px;
+}
+    #form-descontos-novidades {
+    color: white;
+    font-size: 14px;
+    margin-left: 34px;
+}
+    #form-descontos-novidades #btn-descontos-novidades {
+    position: relative;
+    width: 150px;
+    height: 46px;
+    background-color: #f66783;
+    color: #FFF;
+    left: 67px;
+    top: 4px;
+}
+    .float_left #logo-rodape {
+    right: 10%;
+    margin-top: -269px;
+    width: 85px;
+}
+}
+
+.zap-img{
+    width: 40%;
+    bottom: -90px;
+    position: fixed;
+    right: 0;
+    opacity: 0;
+    transition: 1s;
+    
+    
+}
+
+.appear{
+ bottom: 0;
+    opacity: 1;
+    animation: logomenor 2s;
+    
+}
+
